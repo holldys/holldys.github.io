@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Business Name | Building Surveyor</title>
+    <meta name="description" content="Professional building surveying services in the UK. Home surveys, commercial surveys, defects analysis, and expert advice.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1>Your Business Name</h1>
+        <p>Chartered Building Surveyor</p>
+    </div>
+</header>
+
+<nav>
+    <div class="container">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<section class="hero">
+    <div class="container">
+        <h2>Independent Building Surveying Services</h2>
+        <p>Clear, professional advice you can trust — across the UK</p>
+        <a href="#contact" class="button">Get in Touch</a>
+    </div>
+</section>
+
+<section id="about">
+    <div class="container">
+        <h2>About</h2>
+        <p>
+            Your Business Name provides professional and independent building surveying services
+            to homeowners, buyers, landlords, and commercial clients across the UK.
+        </p>
+        <p>
+            With a focus on clear reporting, practical advice, and attention to detail,
+            we help clients understand the condition of their property and make informed decisions.
+        </p>
+    </div>
+</section>
+
+<section id="services" class="light">
+    <div class="container">
+        <h2>Services</h2>
+
+        <div class="services">
+            <div class="service">
+                <h3>Building Surveys (Level 3)</h3>
+                <p>Comprehensive surveys for older, larger, or altered properties.</p>
+            </div>
+
+            <div class="service">
+                <h3>Homebuyer Reports (Level 2)</h3>
+                <p>Clear and concise reports for conventional properties.</p>
+            </div>
+
+            <div class="service">
+                <h3>Defects Analysis</h3>
+                <p>Investigation and reporting on specific building issues.</p>
+            </div>
+
+            <div class="service">
+                <h3>Commercial Surveys</h3>
+                <p>Pre-purchase and condition surveys for commercial properties.</p>
+            </div>
+
+            <div class="service">
+                <h3>Schedule of Condition</h3>
+                <p>Detailed photographic records for lease and legal purposes.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="container">
+        <h2>Contact</h2>
+        <p>If you’d like to discuss your requirements or request a quotation, please get in touch.</p>
+
+        <div class="contact-details">
+            <p><strong>Email:</strong> <a href="mailto:info@yourdomain.co.uk">info@yourdomain.co.uk</a></p>
+            <p><strong>Phone:</strong> <a href="tel:+447000000000">+44 7000 000000</a></p>
+            <p><strong>Location:</strong> United Kingdom</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>&copy; <span id="year"></span> Your Business Name. All rights reserved.</p>
+    </div>
+</footer>
+
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
