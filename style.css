@@ -178,8 +178,9 @@ footer a {
 
 /* Text on top */
 .hero-content {
+    .hero-content * {
+    color: #ffffff !important;
     position: relative;
-    color: #ffffff;
     text-align: center;
     z-index: 1;
 }
