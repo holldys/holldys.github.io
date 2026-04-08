@@ -190,3 +190,29 @@ footer a {
 .hero-content p {
     font-size: 1.3rem;
 }
+/* Top bar / header */
+
+.top-bar {
+    background-color: #f5efe6; /* Egyptian cotton style */
+    border-bottom: 1px solid #e5e7eb;
+    padding: 10px 20px;
+}
+
+.top-bar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo */
+
+.logo {
+    height: 40px;
+}
+
+/* Optional menu placeholder */
+
+.menu {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
