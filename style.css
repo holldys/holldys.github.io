@@ -152,3 +152,41 @@ footer a {
     color: white;
     transform: translateY(-5px);
 }
+/* Hero image section */
+
+.hero-image {
+    position: relative;
+    height: 80vh;
+    background: url('https://images.unsplash.com/photo-1503387762-592deb58ef4e') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Dark overlay */
+.hero-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* Text on top */
+.hero-content {
+    position: relative;
+    color: white;
+    text-align: center;
+    z-index: 1;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.3rem;
+}
