@@ -107,7 +107,7 @@ footer a {
     text-align: center;
     padding: 60px 20px 30px;
     background: #1f2933;
-    color: white;
+    color: #ffffff;
 }
 
 .home-header h1 {
@@ -149,7 +149,7 @@ footer a {
 
 .option-box:hover {
     background: #1f2933;
-    color: white;
+    color: #ffffff;
     transform: translateY(-5px);
 }
 /* Hero image section */
@@ -179,7 +179,7 @@ footer a {
 /* Text on top */
 .hero-content {
     position: relative;
-    color: white;
+    color: #ffffff;
     text-align: center;
     z-index: 1;
 }
