@@ -119,9 +119,10 @@ body {
     text-align: center;
 }
 
-.page-header h1 {
-    font-size: 2.4rem;
-    font-weight: 500;
+.page-header {
+    padding: 80px 20px 40px;
+    text-align: center;
+    background-color: #f7f5f2;
 }
 
 /* SERVICES GRID */
@@ -175,3 +176,8 @@ footer {
 .page-header {
     background-color: transparent;
 }
+.home-options,
+.services-grid {
+    background-color: transparent;
+}
+
