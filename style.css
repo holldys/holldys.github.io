@@ -1,4 +1,4 @@
-/* Reset and basic styles */
+/* RESET */
 * {
     margin: 0;
     padding: 0;
@@ -6,44 +6,46 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Helvetica Neue", Arial, sans-serif;
     line-height: 1.6;
-    color: #333;
+    color: #1a1a1a;
     background-color: #ffffff;
 }
 
+/* CONTAINER */
 .container {
     width: 90%;
-    max-width: 1100px;
+    max-width: 1200px;
     margin: auto;
 }
 
-/* Top bar / header */
+/* TOP BAR */
 .top-bar {
-    background-color: #f5efe6; /* Egyptian cotton */
-    border-bottom: 1px solid #e5e7eb;
-    padding: 10px 20px;
+    background-color: #f7f5f2;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 12px 0;
 }
 
 .top-bar .container {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
 }
 
 .logo {
-    height: 40px;
+    height: 42px;
 }
 
 .menu {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
     cursor: pointer;
 }
 
-/* Hero image section */
+/* HERO */
 .hero-image {
     position: relative;
-    height: 80vh;
+    height: 85vh;
     background: url('https://images.unsplash.com/photo-1503387762-592deb58ef4e') no-repeat center center/cover;
     display: flex;
     align-items: center;
@@ -53,113 +55,116 @@ body {
 .hero-image::before {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
+    inset: 0;
+    background: rgba(0,0,0,0.45);
 }
 
-.hero-content * {
-    color: #ffffff !important;
+.hero-content {
     position: relative;
     text-align: center;
-    z-index: 1;
+    color: white;
 }
 
 .hero-content h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
+    font-weight: 500;
+    letter-spacing: 1px;
     margin-bottom: 10px;
 }
 
 .hero-content p {
-    font-size: 1.3rem;
-}
-
-/* Homepage layout */
-.home-header {
-    text-align: center;
-    padding: 60px 20px 30px;
-    background: #1f2933;
-    color: #ffffff;
-}
-
-.home-header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-}
-
-.home-header p {
     font-size: 1.2rem;
     opacity: 0.9;
 }
 
-/* Two option boxes */
+/* OPTIONS (HOME BOXES) */
 .home-options {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    padding: 60px 20px;
-    flex-wrap: wrap;
-}
-
-.option-box {
-    flex: 1 1 300px;
-    max-width: 400px;
-    background: #f9fafb;
-    border: 1px solid #e5e7eb;
-    padding: 40px;
-    text-align: center;
-    text-decoration: none;
-    color: #111827;
-    border-radius: 6px;
-    transition: all 0.25s ease;
-}
-
-.option-box h2 {
-    margin-bottom: 10px;
-}
-
-.option-box:hover {
-    background: #1f2933;
-    color: #ffffff;
-    transform: translateY(-5px);
-}
-/* Page header */
-.page-header {
-    padding: 60px 20px;
-    text-align: center;
-    background: #f3f4f6;
-}
-
-.page-header h1 {
-    font-size: 2.2rem;
-}
-
-/* 4-box grid layout */
-.services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 40px 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 80px 20px;
     max-width: 1100px;
     margin: auto;
 }
 
-
-.service-box {
-    background: #f9fafb;
-    border: 1px solid #e5e7eb;
-    padding: 50px 20px;
+.option-box {
+    background: #ffffff;
+    border: 1px solid #e8e8e8;
+    padding: 50px 30px;
     text-align: center;
     text-decoration: none;
-    color: #111827;
-    border-radius: 6px;
-    transition: all 0.25s ease;
+    color: #1a1a1a;
+    transition: all 0.3s ease;
+}
+
+.option-box h2 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.option-box p {
+    font-size: 0.95rem;
+    color: #666;
+}
+
+.option-box:hover {
+    transform: translateY(-6px);
+    border-color: #1f2933;
+}
+
+/* PAGE HEADER */
+.page-header {
+    padding: 80px 20px 40px;
+    text-align: center;
+}
+
+.page-header h1 {
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+/* SERVICES GRID */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    padding: 40px 20px 80px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.service-box {
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
+    padding: 60px 25px;
+    text-align: center;
+    text-decoration: none;
+    color: #1a1a1a;
+    transition: all 0.3s ease;
+}
+
+.service-box h2 {
+    font-size: 1.2rem;
+    font-weight: 500;
 }
 
 .service-box:hover {
+    transform: translateY(-6px);
+    border-color: #1f2933;
+}
+
+/* CONTENT */
+.container p {
+    font-size: 1rem;
+    color: #444;
+    max-width: 700px;
+}
+
+/* FOOTER (optional later) */
+footer {
     background: #1f2933;
     color: white;
-    transform: translateY(-5px);
+    text-align: center;
+    padding: 30px 0;
 }
